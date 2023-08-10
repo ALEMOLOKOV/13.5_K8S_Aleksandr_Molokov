@@ -1,0 +1,29 @@
+# Default values for my-helm-chart.
+
+replicaCount: 1
+namespace: helm-ns
+image:
+  repository: nginx
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: ""
+
+
+service:
+  type: NodePort
+  ports:
+  - name: nginx
+    port: 80
+    protocol: TCP
+    nodePort: 31150
+
+
+resources:
+   limits:
+     cpu: 100m
+     memory: 128Mi
+   requests:
+     cpu: 100m
+     memory: 128Mi
+
+appPort: 80
