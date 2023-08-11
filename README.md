@@ -25,6 +25,9 @@
 
 ![helm template my-helm-chart1](https://github.com/ALEMOLOKOV/13.5_K8S_Aleksandr_Molokov/assets/109212419/04e764c1-1b8a-4aba-a5db-5a533964f14f)
 
+#### Запуск 
+
+![тестирование chart](https://github.com/ALEMOLOKOV/13.5_K8S_Aleksandr_Molokov/assets/109212419/fd0ec6ba-3597-4939-9df1-a62b9f2140d0)
 
 ------
 ### Задание 2. Запустить две версии в разных неймспейсах
@@ -35,4 +38,5 @@
 
 
 ### Ответ
+
 
