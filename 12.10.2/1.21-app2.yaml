@@ -1,0 +1,16 @@
+replicaCount: 1
+namespace: app2
+
+deployment:
+  name: deploy-app2
+
+image:
+  tag: "1.21"
+
+dataset: dataset-app2
+
+service:
+  name: helm-svc3
+  type: NodePort
+  ports:
+    nodePort: 31250

@@ -1,0 +1,30 @@
+# Default values for my-helm-chart.
+
+replicaCount: 1
+namespace: app1
+image:
+  repository: nginx
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "1.19"
+
+dataset: dataset-app1
+
+deployment:
+  name: deploy1-app1
+
+service:
+  name: helm-svc1
+  type: NodePort
+  ports:
+    nodePort: 31150
+
+resources:
+   limits:
+     cpu: 100m
+     memory: 128Mi
+   requests:
+     cpu: 100m
+     memory: 128Mi
+
+appPort: 80
